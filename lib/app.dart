@@ -9,15 +9,7 @@ class BmiCalculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       home: BmiApp(),
-      themeMode: ThemeMode.system,
-
     );
 
-  }
-  ThemeData _dartThemeData() {
-    return ThemeData(
-      brightness: Brightness.dark,
-
-    );
   }
 }

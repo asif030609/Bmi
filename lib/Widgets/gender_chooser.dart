@@ -34,17 +34,15 @@ class _GenderChooserState extends State<GenderChooser> {
         inactiveFgColor: Colors.deepPurple,
         totalSwitches: 2,
         icons: const [FontAwesomeIcons.venus, FontAwesomeIcons.mars],
-        activeBgColors: const [
-          [Colors.deepPurple],
-          [Colors.deepPurple]
-        ],
+        activeBgColors: const [[Colors.deepPurple], [Colors.deepPurple]],
         initialLabelIndex: _selectedGender,
         onToggle: (index) {
           setState(() {
-            _selectedGender = index!; // Update the state variable
+            _selectedGender = index!;
           });
-          widget.onGenderChanged(index!); // Call the callback with the new index
+          widget.onGenderChanged(index!);
         },
+        labels: const ['Female', 'Male'], // Add text labels
       ),
     );
   }
