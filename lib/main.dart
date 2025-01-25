@@ -3,6 +3,6 @@ import 'package:flutter/material.dart';
 import 'app.dart';
 
 void main() {
-  //app start from here
+  //initial commit
   runApp(const BmiCalculator());
 }
